@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Grid Design</title>
+    <style>
+      body {
+        margin: 0px auto;
+        background-color: lightgrey;
+        font-family: "Poppins", sans-serif;
+      }
+      .collaction {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        width: 100%;
+      }
+      .header{
+        display: flex;
+        justify-content: center;
+      }
+      .details {
+        /* border: 1px solid black; */
+        padding: 15px;
+        background-color: white;
+      }
+      .details-img {
+        display: flex;
+        justify-content: center;
+        /* width: 50%; */
+      }
+      @media screen and (max-width: 576px) {
+        .collaction {
+          grid-template-columns: repeat(1, 1fr);
+          flex-direction: column;
+          
+        }
+      }
+      @media screen and (min-width: 577px) and (max-width: 992px) {
+        .collaction {
+          grid-template-columns: repeat(2, 1fr);
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width: 993px) and (max-width: 1400px) {
+        .collaction {
+          grid-template-columns: repeat(2, 1fr);
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="header">Popular Collaction</h2>
+    <section class="collaction">
+      
+      <div class="details">
+        <div class="details-img">
+          <img src="images/phone-1.png" alt="" />
+        </div>
+        <div class="details-dsc">
+          <h2>Poco</h2>
+          <h3>$230</h3>
+          <p>★★★★✰</p>
+          <p>
+            Lorem ipsum dolor sit amet,<br />
+            consectetur adipisicing <br />
+            elit. Minus, suscipit.
+          </p>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-img">
+          <img src="images/phone-2.png" alt="" />
+        </div>
+        <div class="details-dsc">
+          <h2>Iphone</h2>
+          <h3>$552</h3>
+          <p>★★★★✰</p>
+          <p>
+            Lorem ipsum dolor sit amet,<br />
+            consectetur adipisicing <br />
+            elit. Minus, suscipit.
+          </p>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-img">
+          <img src="images/phone-3.png" alt="" />
+        </div>
+        <div class="details-dsc">
+          <h2>Samsung</h2>
+          <h3>$553</h3>
+          <p>★★★★✰</p>
+          <p>
+            Lorem ipsum dolor sit amet,<br />
+            consectetur adipisicing <br />
+            elit. Minus, suscipit.
+          </p>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-img">
+          <img src="images/product-1.png" alt="" />
+        </div>
+        <div class="details-dsc">
+          <h2>Asus</h2>
+          <h3>$5545</h3>
+          <p>★★★★✰</p>
+          <p>
+            Lorem ipsum dolor sit amet,<br />
+            consectetur adipisicing <br />
+            elit. Minus, suscipit.
+          </p>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-img">
+          <img src="images/product-2.png" alt="" />
+        </div>
+        <div class="details-dsc">
+          <h2>Hp</h2>
+          <h3>$4525</h3>
+          <p>★★★★✰</p>
+          <p>
+            Lorem ipsum dolor sit amet,<br />
+            consectetur adipisicing <br />
+            elit. Minus, suscipit.
+          </p>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-img">
+          <img src="images/product-3.png" alt="" />
+        </div>
+        <div class="details-dsc">
+          <h2>Dell</h2>
+          <h3>$5346</h3>
+          <p>★★★★✰</p>
+          <p>
+            Lorem ipsum dolor sit amet,<br />
+            consectetur adipisicing <br />
+            elit. Minus, suscipit.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
